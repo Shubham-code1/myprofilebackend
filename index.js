@@ -40,7 +40,11 @@ app.route("/api/v1/profile/admin/skills")
 app.route("/api/v1/profile/user/skills")
 .get(fetchSkills);
 
-
+app.get("/homes",(req,res)=>{
+  res.status(200).json({
+    "hi":"Hello"
+  })
+})
 
 app.get("/api/v1/profile/user/project",FetchProjects);
 
